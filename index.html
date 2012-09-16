@@ -1,0 +1,22 @@
+---
+---
+
+<html>
+<head>
+  <title>Bootstragram</title>
+  <meta charset="UTF-8">
+</head>
+<body>
+  <h1>Bootstragram</h1>
+  <nav>
+    <ul class="posts">
+      {% for post in site.posts %}
+        <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+      {% endfor %}
+    </ul>
+  </nav>
+  <footer>
+    (c) Mickaël Floc'hlay 2012. Powered by <a href="https://github.com/mojombo/jekyll/">jekyll</a>, <a href="https://github.com/dirtyhenry/bootstragram">sources</a> available on GitHub.
+  </footer>
+</body>
+</html>
