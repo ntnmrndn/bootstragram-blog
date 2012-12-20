@@ -4,7 +4,7 @@ Bootstragram
 
 Available online at [bootstragram.com][bootstragram].
 
-Work in progress... Obviously... But it's going better.
+Work in progress... Obviously...
 
 ## Usage
 
