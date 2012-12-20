@@ -2,7 +2,7 @@ Bootstragram
 ============
 
 
-Available online at http://bootstragram.com.
+Available online at [bootstragram.com][bootstragram].
 
 Work in progress... Obviously...
 
@@ -16,3 +16,4 @@ Work in progress... Obviously...
 
 
 [jekyll]: http://jekyllrb.com/ "Transform your text into a monster"
+[bootstragram]: http://bootstragram.com "Bootstragram"
