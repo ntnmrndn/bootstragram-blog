@@ -1,0 +1,32 @@
+/***
+    With help from http://kaikkonendesign.fi/typography/
+ */
+body {
+  line-height: 1.5em;
+  color: #444;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1em;
+  margin-top: 1em;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  line-height: 1.1em;
+  color: #222;
+  padding: 0.6em 0;
+}
+h1 {
+  font-size: 2em;
+}
+h2 {
+  font-size: 1.2em;
+}
+p {
+  margin-bottom: 0;
+}
+p + p {
+  text-indent: 2em;
+  margin-top: 0;
+}
