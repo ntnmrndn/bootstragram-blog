@@ -24,10 +24,8 @@ In the "Issues" tab, select your filter, and then "Views" and "Excel (Current Fi
 
 Head to [this GitHub repo](https://github.com/dirtyhenry/jira-to-agile-cards), copy the two files included in the same directory where you have your .html file and add the following 2 lines at the end of your Jira export:
 
-<code class="javascript">
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script src="jira.js"></script>
-</code>
     
 And refresh your HTML page. Tada!
 
