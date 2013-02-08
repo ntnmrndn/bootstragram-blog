@@ -24,10 +24,12 @@ In the "Issues" tab, select your filter, and then "Views" and "Excel (Current Fi
 
 Head to [this GitHub repo](https://github.com/dirtyhenry/jira-to-agile-cards), copy the two files included in the same directory where you have your .html file and add the following 2 lines at the end of your Jira export:
 
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script src="jira.js"></script>
     
 And refresh your HTML page. Tada!
+
+![The beautiful result: a scrum board with pretty yellow scrum cards](/img/scrum_board.png "The beautiful final result")
 
 ## Troubleshooting
 
