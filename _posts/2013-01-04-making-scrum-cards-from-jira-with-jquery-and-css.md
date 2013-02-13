@@ -36,3 +36,9 @@ And refresh your HTML page. Tada!
 If the "tada" moment is more of a "nothing happened" moment, check out your JavaScript console: it's most likely a jQuery download failure. In which case, download jQuery and change the above script to include a local version of jQuery.
 
 If it's still not working, try to get some context and yell at me [here](https://github.com/dirtyhenry/jira-to-agile-cards/issues).
+
+Full disclosure: other solutions could be:
+
+- [Agile Cards for JIRA plugin by Spartez](https://marketplace.atlassian.com/plugins/com.spartez.scrumprint.scrumplugin) but you won't be able to get it if you run the OnDemand version of Jira
+- [This Java code](http://blog.insane-development.org/?p=25) by insane-development.org
+- [This open-source Ruby gem](https://github.com/jhollingworth/jira-cards) by jhollingworth
