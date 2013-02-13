@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Creating Post-it like Scrum Cards from Jira export with jQuery and CSS
+title: Making Scrum Cards from Jira with jQuery and CSS
 ---
 
 # Making Scrum Cards from Jira with jQuery and CSS
