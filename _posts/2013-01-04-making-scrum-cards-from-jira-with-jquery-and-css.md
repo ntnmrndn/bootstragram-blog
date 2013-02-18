@@ -42,3 +42,5 @@ Full disclosure: other solutions could be:
 - [Agile Cards for JIRA plugin by Spartez](https://marketplace.atlassian.com/plugins/com.spartez.scrumprint.scrumplugin) but you won't be able to get it if you run the OnDemand version of Jira
 - [This Java code](http://blog.insane-development.org/?p=25) by insane-development.org
 - [This open-source Ruby gem](https://github.com/jhollingworth/jira-cards) by jhollingworth
+
+<a href="https://github.com/dirtyhenry/jira-to-agile-cards"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png" alt="Fork me on GitHub"></a>
