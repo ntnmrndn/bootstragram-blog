@@ -1,0 +1,29 @@
+<html>
+<body>
+Hi Adenova.
+
+<script type="text/javascript">
+  if (/MSIE (\d+\.\d+);/.test(navigator.userAgent)) { //test for MSIE x.x;
+    var ieversion = new Number(RegExp.$1) // capture x.x portion and store as a number
+    if (ieversion >=10) {
+      document.write("<p>You're using IE10 or above.</p>");
+    } else {
+      document.write("<p>You're using IE but an older version than 10.</p>");
+    }
+  } else {
+    document.write("<p>You're not running IE10.</p>");
+  }
+
+  if (/WebView\/(\d+\.\d+)/.test(navigator.userAgent)) { //test for WebView/x.x
+    var wvVersion = new Number(RegExp.$1) // capture x.x portion and store as a number
+    if (wvVersion >= 1) {
+      document.write("<p>You're using a WebView.</p>");
+    } else {
+      document.write("<p>You're using a WebView but an older version than 1.</p>");
+    }
+  } else {
+    document.write("<p>You're not running a WebView.</p>");
+  }
+</script>
+</body>
+</html>
