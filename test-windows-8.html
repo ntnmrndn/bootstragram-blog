@@ -13,42 +13,8 @@ Hi Adenova.
 </div>
 
 <script type="text/javascript">
-  msie10 = false; 
-  if (/MSIE (\d+\.\d+);/.test(navigator.userAgent)) { 
-    var ieversion = new Number(RegExp.$1);
-    if (ieversion >=10) {
-      msie10 = true;
-    }
-  }
-
-  webview = false;
-  if (/WebView\/(\d+\.\d+)/.test(navigator.userAgent)) {
-    var wvVersion = new Number(RegExp.$1);
-    if (wvVersion >= 1) {
-      webview = true;
-    }
-  }
-
-  if (msie10 && webview) {
-    document.write("<p>APP WIN8</p>");
-    
-    var images = document.getElementsByTagName("img");
-    for (i = 0; i < images.length; i++) {
-      document.write("<p>" + images[i].getAttribute("src") + "</p>");
-      if (/\.\.\/Documents\/Archives\/\d+\/(images\/.*)/.test(images[i].getAttribute("src"))) {
-        var newURL = "../" + RegExp.$1
-        document.write("<p>new URL is " + newURL + "</p>");
-        images[i].setAttribute("src", newURL);
-      } else {
-        document.write("<p>NO</p>"); 
-      }
-    }
-  
-    var links = document.getElementsByTagName("a");
-    for (j = 0; j < links.length; j++) {
-      links[j].setAttribute("target", "_blank");
-    }
-  }
+cd1=!1;/MSIE (\d+\.\d+);/.test(navigator.userAgent)&&10<=new Number(RegExp.$1)&&(cd1=!0);cd2=!1;/WebView\/(\d+\.\d+)/.test(navigator.userAgent)&&1<=new Number(RegExp.$1)&&(cd2=!0);
+if(cd1&&cd2){document.write("<p>WIN8</p>");var a=document.getElementsByTagName("img");for(i=0;i<a.length;i++)/\.\.\/Documents\/Archives\/\d+\/(images\/.*)/.test(a[i].getAttribute("src"))&&a[i].setAttribute("src","../"+RegExp.$1);var b=document.getElementsByTagName("a");for(j=0;j<links.length;j++)0==b[j].getAttribute("href").indexOf("http")&&b[j].setAttribute("target","_blank")};
 </script>
 </body>
 </html>
