@@ -2,27 +2,52 @@
 <body>
 Hi Adenova.
 
+<div>
+<img src="../Documents/Archives/132323/images/toto.png" width="500" height="300" alt="Apple fruit">
+</div>
+
+<a href="http://deadrooster.org">Dead Rooster</a>
+
+<div>
+<img src="http://farm8.staticflickr.com/7200/6971011350_3c2fa46410.jpg" width="335" height="500" alt="Window">
+</div>
+
 <script type="text/javascript">
-  if (/MSIE (\d+\.\d+);/.test(navigator.userAgent)) { //test for MSIE x.x;
-    var ieversion = new Number(RegExp.$1) // capture x.x portion and store as a number
+  msie10 = false; 
+  if (/MSIE (\d+\.\d+);/.test(navigator.userAgent)) { 
+    var ieversion = new Number(RegExp.$1);
     if (ieversion >=10) {
-      document.write("<p>You're using IE10 or above.</p>");
-    } else {
-      document.write("<p>You're using IE but an older version than 10.</p>");
+      msie10 = true;
     }
-  } else {
-    document.write("<p>You're not running IE10.</p>");
   }
 
-  if (/WebView\/(\d+\.\d+)/.test(navigator.userAgent)) { //test for WebView/x.x
-    var wvVersion = new Number(RegExp.$1) // capture x.x portion and store as a number
+  webview = false;
+  if (/WebView\/(\d+\.\d+)/.test(navigator.userAgent)) {
+    var wvVersion = new Number(RegExp.$1);
     if (wvVersion >= 1) {
-      document.write("<p>You're using a WebView.</p>");
-    } else {
-      document.write("<p>You're using a WebView but an older version than 1.</p>");
+      webview = true;
     }
-  } else {
-    document.write("<p>You're not running a WebView.</p>");
+  }
+
+  if (msie10 && webview) {
+    document.write("<p>APP WIN8</p>");
+    
+    var images = document.getElementsByTagName("img");
+    for (i = 0; i < images.length; i++) {
+      document.write("<p>" + images[i].getAttribute("src") + "</p>");
+      if (/\.\.\/Documents\/Archives\/\d+\/(images\/.*)/.test(images[i].getAttribute("src"))) {
+        var newURL = "../" + RegExp.$1
+        document.write("<p>new URL is " + newURL + "</p>");
+        images[i].setAttribute("src", newURL);
+      } else {
+        document.write("<p>NO</p>"); 
+      }
+    }
+  
+    var links = document.getElementsByTagName("a");
+    for (j = 0; j < links.length; j++) {
+      links[j].setAttribute("target", "_blank");
+    }
   }
 </script>
 </body>
