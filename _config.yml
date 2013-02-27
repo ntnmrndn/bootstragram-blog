@@ -1,1 +1,3 @@
 permalink:  /:title
+include: _morningcoffee
+exclude: run.sh
