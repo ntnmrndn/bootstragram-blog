@@ -1,2 +1,2 @@
-permalink:  /:title
-baseurl:    /blog/
+permalink:  /:title/
+baseurl:    /blog
